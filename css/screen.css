@@ -1,0 +1,566 @@
+/* CSS Document */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #60c6f1;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 196, 245, 1)), color-stop(20%, rgba(27, 169, 245, 1)), color-stop(49%, rgba(30, 152, 245, 1)), color-stop(100%, rgba(19, 63, 128, 1)));
+    background: -webkit-linear-gradient(top, rgba(0, 196, 245, 1) 0%, rgba(27, 169, 245, 1) 20%, rgba(30, 152, 245, 1) 49%, rgba(19, 63, 128, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 196, 245, 1) 0%, rgba(27, 169, 245, 1) 20%, rgba(30, 152, 245, 1) 49%, rgba(19, 63, 128, 1) 100%);
+}
+a {
+    text-decoration: underline;
+    color: #5291ff;
+}
+body {
+    overflow-x:hidden;
+}
+
+/* Text */
+
+h1 {
+	font-family: 'Bungee Shade', cursive;
+    font-size: 100px;
+    font-weight: normal;
+    color: #f3d3b2;
+}
+h2 {
+	font-family: 'Bungee Shade', cursive;
+    font-size: 1.5em;
+	margin-top: 0px;
+	line-height: 2em;
+}
+h3 {font-family: 'Press Start 2P', cursive;
+    font-size: 1.6em;
+    line-height: 2em;
+	color: #f5f5f5;		
+}
+p {
+	font-family: 'Press Start 2P', cursive;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    letter-spacing: .04em;
+}
+
+/* Default Scroll Properties */
+
+.scroll {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.absolute-element {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Dialogue Display */
+
+
+.intro-page {
+	background-image:url(../_img/start%20block.jpg);
+	opacity: 0.95;
+    pointer-events: all !important;
+    background-color: #de421c;
+    padding: 60px;
+    width: 540px;
+    height: 160px;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+	margin-left: 380px;
+}
+.intro-page p {
+    font-size: 1.2em;
+}
+#super-random-name {
+	padding-top: 0px;
+	padding-left: 50px;
+	position: absolute;
+	top: -80px;			
+}
+.intro-page #start {
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 0px;	
+}
+.block-text {
+    pointer-events: all !important;
+    display: block;
+    background-color: white;
+    padding: 0px 40px 40px;
+    border-radius: 15px;
+    border: 5px solid #534149;
+    text-align: center;
+    color: black;
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    
+}
+.block-text:before {
+	content: "";
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    left: 15px;
+    right: 15px;
+    bottom: 5px;
+    border-radius: 10px;
+    border: 2px dashed #d9d9d9;
+}
+.hearts {
+	height: 30px;
+	margin-top: -20px;
+}
+.stat {
+    width: 420px;
+    display: block;
+    background-color: #ffffff;
+    border: 5px solid #ebfbff;
+    color: #0a8ac6;
+    border-radius: 35px;
+    padding: 20px 24px;
+    position: absolute;
+    text-align: center;
+}
+.stat:after,
+.stat:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+.stat:after {
+    border-color: rgba(94, 73, 82, 0);
+    border-top-color: #ffffff;
+    border-width: 15px;
+    margin-left: -15px;
+}
+.stat:before {
+    border-color: rgba(64, 64, 64, 0);
+    border-top-color: #ebfbff;
+    border-width: 22px;
+    margin-left: -22px;
+}
+
+/* Effects */
+
+.flat-shadow {
+    -webkit-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+}
+.hide-element {
+    display: block;
+}
+.hide-element {
+    display: none;
+}
+.next-button {
+    opacity: 1;
+    width: 50px;
+    margin: 50px auto 0px;
+    background-color:hsla(0,0%,100%,1);
+    border-radius: 80px;
+    padding: 10px 55px;
+    display: block;
+    border: 5px solid #534149;
+}
+.next-button-other {
+	opacity: 1;
+    width: 50px;
+	margin: -100px 550px;
+    background-color:hsla(0,0%,100%,1);
+    border-radius: 80px;
+    padding: 10px 10px;
+    display: block;
+    border: 5px solid #ae1d1d;
+}
+
+/* Dialogues */
+
+#dialogue1 {
+    left: 1600px;
+    width: 500px;
+    height: 300px;
+}
+#dialogue2 {
+    left: 3400px;
+    width: 500px;
+    height: 280px;
+}
+#dialogue3 {
+    left: 14120px;
+    width: 500px;
+    height: 280px;
+	border: 5px solid #ae1d1d;
+}
+#dialogue4 {
+    left: 15500px;
+    width: 500px;
+    height: 280px;
+	border: 5px solid #ae1d1d;
+}
+#dialogue5 {
+    left: 9260px;
+    width: 500px;
+    height: 540px;
+    top: 0;
+    bottom: 0;
+}
+#stat1 {
+    left: 2520px;
+    bottom: 575px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.8em;
+	color: #cb4f0f;
+}
+#stat2 {
+    left: 2480px;
+    bottom: 600px;
+}
+#stat3 {
+    left: 4195px;
+     bottom: 540px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.8em;
+	color: #cb4f0f;
+}
+
+/* Section 1 Objects*/
+
+#intromario {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    z-index: 6000;
+}
+#intromario-base {
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+#intromario-eyes {
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+	-webkit-animation: blink 2s forwards infinite;
+	-moz-animation: blink 2s forwards infinite;
+	animation: blink 2s forwards infinite;
+}
+#plant-front {
+    left: 3390px;
+    bottom: 0px;
+    z-index: 10;
+}
+
+/* Section 2 Objects*/
+
+#trees {
+   width: 4500px;
+    height: 110px;
+    left: 2450px;
+    position: absolute;
+    z-index: 1;;
+}
+#level1 {
+    left: 2350px;
+    bottom: 90px;
+}
+#mariojump1 {
+	left: 2350px;
+	bottom: 45px;
+	-webkit-animation: xJump 5s infinite ease-out;
+	-moz-animation: xJump 5s infinite ease-out;
+  	animation: xJump 5s infinite ease-out;
+}
+#mariojump1:after {
+	-webkit-animation: yJump 5s infinite ease-out;
+	-moz-animation: yJump 5s infinite ease-out;
+  	animation: yJump 5s infinite ease-out;
+}
+#mushroom1 {
+	left: 2340px;
+	bottom: 90px;
+	-webkit-animation: xAxis 5s infinite ease-in;
+	-moz-animation: xAxis 5s infinite ease-in;
+  	animation: xAxis 5s infinite ease-in;
+}
+#mushroom1:after {
+	-webkit-animation: yAxis 5s infinite ease-out;
+	-moz-animation: yAxis 5s infinite ease-out;
+  	animation: yAxis 5s infinite ease-out;
+}
+
+/* Section 3 Objects*/
+
+#pipes {
+    left: 4080px;
+    bottom: 60px;
+}
+#gold1 {
+	left: 4100px;
+    bottom: 280px;
+  	-webkit-animation: goldflipY 1s infinite ease-out;
+	-moz-animation: goldflipY 1s infinite ease-out;
+	animation: goldflipY 1s infinite ease-out;
+}
+#gold2 {
+	left: 4170px;
+    bottom: 280px;
+	-webkit-animation: goldflipY 1s infinite ease-out;
+	-moz-animation: goldflipY 1s infinite ease-out;
+	animation: goldflipY 1s infinite ease-out;
+}
+#planttopopen {
+	left: 4370px;
+    bottom: 60px;
+	-webkit-animation: FadeInOut 2s infinite ease-in-out;
+	-moz-animation: FadeInOut 2s infinite ease-in-out;
+	animation: FadeInOut 2s infinite ease-in-out;
+}
+#planttopclosed {
+	left: 4370px;
+    bottom: 60px;
+	-webkit-animation: FadeInOut2 2s infinite ease-in-out;
+	-moz-animation: FadeInOut2 2s infinite ease-in-out;
+	animation: FadeInOut2 2s infinite ease-in-out;
+}
+#plantbottomopen {
+	left: 4370px;
+    bottom: 60px;
+	-webkit-animation: FadeInOut 2s infinite ease-in-out;
+	-moz-animation: FadeInOut 2s infinite ease-in-out;
+	animation: FadeInOut 2s infinite ease-in-out;
+	animation-delay: 1s;
+}
+#plantbottomclosed {
+	left: 4370px;
+    bottom: 60px;
+	-webkit-animation: FadeInOut2 2s infinite ease-in-out;
+	-moz-animation: FadeInOut2 2s infinite ease-in-out;
+	animation: FadeInOut2 2s infinite ease-in-out;
+	animation-delay: 1s;
+}
+#flyingturtle1 {
+	left: 4820px;
+    bottom: 380px;
+	-webkit-animation:: Floatingx 3s infinite ease-in-out;
+	-moz-animation:: Floatingx 3s infinite ease-in-out;
+ 	animation: Floatingx 3s infinite ease-in-out;
+}
+
+/* Section 4 Objects*/
+
+#stairscastle {
+    left: 4900px;
+    bottom: 59px;
+}
+#flag {
+	left: 5598px;
+    bottom: 550px;
+	-webkit-animation: godown 10s forwards linear;
+	-moz-animation: godown 10s forwards linear;
+	animation: godown 10s forwards linear;
+	-webkit-animation-delay: 50s;
+    animation-delay: 50s;
+}
+#mariorunning {
+	left: 5300px;
+    bottom: 59px;
+	-webkit-animation: mariorunning 15s forwards linear;
+	-moz-animation: mariorunning 15s forwards linear;
+	animation: mariorunning 15s forwards linear;
+	-webkit-animation-delay: 50s;
+    animation-delay: 50s;
+}
+
+/* Section 5 Objects*/
+
+#castle-background {
+    width: 3900px;
+    background: #000;
+    height: 100%;
+    left: 9900px;
+    position: absolute;
+    z-index: 1;
+}
+#insidecastle1 {
+	left: 9900px;
+	bottom: 40px;
+	z-index: 1;
+}
+#lava {
+	width: 3900px;
+	left: 9900px;
+	position: absolute;
+	z-index: 2;
+}
+#fire {
+	width: 210px;
+	left: 10795px;
+	bottom: 283px;
+	position: absolute;
+	z-index: 1;
+	-webkit-animation: fire 10s linear infinite;
+	-moz-animation: fire 10s linear infinite;
+    animation: fire 10s linear infinite;	
+}
+
+/* Section 6 Objects*/
+
+#boss {
+	left: 11500px;
+	bottom: 40px;
+	z-index: 1;
+}
+#flame {
+	left: 11940px;
+	bottom: 200px;
+	position: absolute;
+	z-index: 1;
+	-webkit-animation: flame 7s infinite linear;
+	-moz-animation: flame 7s infinite linear;
+	animation: flame 7s infinite linear;
+}
+
+/* Section 7 Objects*/
+
+#levelprincess {
+	left: 12500px;
+	bottom: 40px;
+	z-index: 1;
+}
+#marioprincess {
+	left: 13000px;
+	bottom: 110px;
+	z-index: 1;
+}
+.glitch_word_box {
+	height: 100px;
+	line-height: 100px;
+	position: relative;			
+	-webkit-animation: disappear 1s infinite linear;
+	-moz-animation: disappear 1s infinite linear;
+	animation: disappear 1s infinite linear;
+}
+.glitch_word_box .glitch_word0 {
+	position: absolute;
+	width: 100%;
+}		
+.glitch_word_box .glitch_word1 {
+	color: red;
+	font-weight: bolder;
+	left: -2px;
+	position: absolute;
+	top: -2px;
+	width: 100%;
+	z-index: -1;	
+	-webkit-animation: animate_glitch_1 .2s infinite linear;
+	-moz-animation: animate_glitch_1 .2s infinite linear;
+	animation: animate_glitch_1 .2s infinite linear;	
+}
+.glitch_word_box .glitch_word2 {
+	color: blue;
+	font-weight: bolder;
+	left: 2px;
+	position: absolute;
+	top: 2px;
+	width: 100%;
+	z-index: -1;
+	-webkit-animation: animate_glitch_2 .3s infinite linear;
+	-moz-animation: animate_glitch_2 .3s infinite linear;
+	-animation: animate_glitch_2 .3s infinite linear;
+}
+
+/* Section 8 Objects*/
+
+#princess {
+	height: 400px;
+	left: 17650px;
+	bottom: 0px;
+	z-index: 10;
+}
+	
+/* Grounds, Hills and Scrolls */
+
+.stat-scroll {
+    z-index: 1000;
+    width: 9500px;
+}
+.dialogue-scroll {
+    pointer-events: none;
+    z-index: 9999;
+    width: 10200px;
+    top: 30px;
+}
+.fast-dialogue {
+    pointer-events: none;
+    top: 20px;
+    z-index: 9999 !important;
+    width: 19000px;
+}
+.ground-long {
+    top: 0px;
+    z-index: 100;
+    width: 15900px;
+}
+.ground1 {
+	bottom: 0px;
+	z-index: 100;
+	width: 15900px;
+}
+.ground3 {
+    bottom: 0px;
+    z-index: 600;
+    width: 9500px;
+}
+.hills1 {
+    bottom: 60px;
+    z-index: 3; /*5000*/
+    width: 10200px;
+}
+.foreground-objects {
+    bottom: 0px;
+    z-index: 9000 !important;
+    width: 15700px;
+}
+.character {
+    bottom: 0px;
+    z-index: 9999;
+    width: 19000px;
+}
+.front {
+    z-index: 1000;
+    width: 6000px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-height: 900px) {
+    
+	#level1 {
+        width: 670px;	
+    }
+	#mushroom1 {
+		width: 670px;
+	}
+	#mariojump1 {
+		width:670px;
+	}
+    #stat1 {
+        left: 2490px;
+        bottom: 535px;
+    }
+}
